@@ -1,6 +1,7 @@
-FROM hoshen12/maor:python
+FROM python:latest
 
 RUN mkdir /app
 COPY . /app
 
-CMD ["app/main.py"]
+
+CMD ["python", "app/main.py"]
