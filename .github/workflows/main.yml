@@ -15,6 +15,5 @@ jobs:
     - uses: actions/checkout@v1
     - name: Build & Push Image
       run: |
-        echo "Aa1234567" | docker login -u "hoshen12" 
         docker image build -t hoshen12/maor:python .
         docker push hoshen12/maor:python
