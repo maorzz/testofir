@@ -1,8 +1,6 @@
 FROM hoshen12/maor:python
 
 RUN mkdir /app
-WORKDIR /app
-
-COPY . .
+COPY . /app
 
 CMD ["app/main.py"]
